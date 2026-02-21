@@ -1,0 +1,13 @@
+# # models/__init__.py
+
+# from .station_model import Station
+# from .machine_model import Machine
+# from .cash_inventory_model import CashInventory
+# from .transaction_model import MachineTransaction
+# from .ticket_model import Ticket
+
+# # การทำแบบนี้จะทำให้ตอน Start App แค่เรา import models 
+# # ตัว SQLModel จะรู้จัก Class ทั้งหมดทันที
+# __all__ = ["Station", "Machine", "CashInventory", "MachineTransaction", "Ticket"]
+
+from models import Station, Machine, CashInventory, MachineTransaction, Ticket
