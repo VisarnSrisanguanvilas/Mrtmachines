@@ -25,7 +25,6 @@ def build_graph():
     for i in range(39, 53):
         connect(i, i + 1)
     connect(53, 10)
-    print("graph",graph)
     return graph
 
 STATION_GRAPH = build_graph()
@@ -34,16 +33,11 @@ def get_shortest_hop(start, end):
     if start == end:
         return 0
     queue = deque([(start, 0)])
-    print('queue :', queue)
     visited = {start}
-    print('visited :', visited)
     
     while queue:
         
         node, distance = queue.popleft()
-        print('node :', node)
-        print('distance', distance)
-        print('-----------------------')
         if node == end:
             return distance
         for neighbor in STATION_GRAPH[node]:
