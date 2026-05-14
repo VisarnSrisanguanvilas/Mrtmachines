@@ -8,3 +8,12 @@ build/
 .idea/
 .vscode/
 *.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
